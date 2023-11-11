@@ -26,10 +26,10 @@ Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abs
 | 25 | Jumper Wires |
 
 ## Connection Diagram
-<foto connection diagram>
+(foto connection diagram)
 
 ## Flashing ESP8266-01 Module 
-<foto flashing esp8266>
+(foto flashing esp8266)
 1. Connect your computer to Arduino via USB
 2. Connect ESP8266-01 Module to Arduino like the image above
 3. Create a new sketch on Arduino IDE, upload an empty code
