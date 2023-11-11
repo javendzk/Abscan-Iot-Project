@@ -33,12 +33,12 @@ Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abs
 1. Connect your computer to Arduino via USB
 2. Connect ESP8266-01 Module to Arduino like the image above
 3. Create a new sketch on Arduino IDE, upload an empty code
-4. Open `abscan_wifi_module.ino` click File > Preferences
-5. Type *http://arduino.esp8266.com/stable/package_esp8266com_index.json* in additional boards
+4. Open `abscan_wifi_module.ino`. Edit SSID and PASSWORD to nearby wifi route.
+5. click File > Preferences and type *http://arduino.esp8266.com/stable/package_esp8266com_index.json* in additional boards
 6. Click Tools > Board > Board Manager, type *esp8266* and install it
 7. On the selected board, find "Generic Esp8266 Module" then select port and upload the code
 8. If it shows "Connecting ....----....." on output monitor, hold RST Pushbutton for 2s
-9. Flashing is completed if you see "Hard Resetting Via RTS Pin"
+9. Flashing is completed if it outputs "Hard Resetting Via RTS Pin"
 
 ## Uploading Code to Arduino UNO R3
 1. Imitate the cable connection shown in the provided connection diagram
