@@ -1,7 +1,7 @@
 # ABSCAN - Remote RFID Attendance
 [![Generic badge](https://img.shields.io/badge/Build-passing-<COLOR>.svg)](https://shields.io/)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-ABSCAN is a remotely monitored RFID-based attendance system for various purposes. Created with the integration of Arduino R3, ESP-01 Wifi, and an independent webserver to utilize its functionalities. This project is open-source and contributions are welcomed.
+ABSCAN is a remotely monitored RFID-based attendance system for various purposes. Created with the integration of Arduino R3, ESP-01 Wifi, and an independent webserver to utilize its functionalities. This project is open-source learning project and contributions are welcomed.
 
 Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abshar. Github profiles are linked at the bottom. **Administrator dasboard: websiteabscanhehe.com**
 
