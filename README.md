@@ -33,7 +33,7 @@ Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abs
 1. Connect your computer to Arduino via USB
 2. Connect ESP8266-01 Module to Arduino like the image above
 3. Create a new sketch on Arduino IDE, upload an empty code
-4. Open `abscan_wifi_module.ino`, click File > Preferences
+4. Open `abscan_wifi_module.ino` click File > Preferences
 5. Type *http://arduino.esp8266.com/stable/package_esp8266com_index.json* in additional boards
 6. Click Tools > Board > Board Manager, type *esp8266* and install it
 7. On the selected board, find "Generic Esp8266 Module" then select port and upload the code
@@ -51,7 +51,7 @@ Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abs
 View the pdf via `abscan_documentation.pdf` or click [here](drive.google.com/linkFilePDF)
 
 ## Author Github Pages
-- github.com/javendzk
-- github.com/lilznug
-- github.com/dhafinhs 
+- https://github.com/javendzk
+- https://github.com/lilznug
+- https://github.com/dhafinhs 
  
