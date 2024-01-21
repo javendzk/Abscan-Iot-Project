@@ -1,0 +1,70 @@
+<!-- This code was made by the Abscan team. For more info, -->
+<!-- visit https://github.com/javendzk/Abscan-Iot-Project -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abscan Admin</title>
+    <link rel="stylesheet" href="src_dashboard/styleDashboard.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+</head>
+<body>
+    <div class="screen_all">
+        <div class="navbar_upper">
+            <img src="assets/abscanLogo.svg">
+        </div>
+        <div class="screen_lower"> 
+            <div class="navbar_kiri">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_manage.html">Manage</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="utilitas-flex">
+                    <ul class="utilitas">
+                        <li class="li-tanggal"><div>Tanggal<br>Waktu</div><span id="tanggal"></span></li>
+                        <li class="li-status">Status Absen: <span id="status"></span></li>
+                        <li><button onclick="toggleStatus()">Toggle Absen</button></li>
+                        <li><button onclick="clearDialog()">Clear Absen</button></li>
+                        <li><button class="csvbtn" onclick="exportSheet()">Export to .XLSX <img src="src_dashboard/symbolExcel.svg"></button></li>
+                    </ul>
+                    <div class="popup" id="popup">
+                        <div class="popup_dialog">
+                            <div class="popup_header">
+                                <button class="popup_close" id="popup_close">&times</button>
+                            </div>
+                            <div class="popup_content">
+                                <p class="popup_text"><span id="popup_text"></span></p>
+                                <div class="popup_buttons" id="popup_buttons">
+                                    <button id="popup_btn1" class="popup_btn1">Tidak</button>
+                                    <button id="popup_btn2" class="popup_btn2" onclick="clearSheet()">Ya</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>    
+                                <th>No</th>
+                                <th>Tanggal</th>
+                                <th>Jam</th>
+                                <th>Nama</th>
+                            </tr>   
+                        </thead>
+                        <tbody id="data-container">
+                            <!--Javascript data di-write kesini-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="src_dashboard/scriptDashboard.js"></script>
+</body>
+</html>

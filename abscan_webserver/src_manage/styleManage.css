@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.screen_all {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navbar_upper {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    justify-content: center;
+    border-bottom: 1px solid;
+    border-color: rgb(198, 198, 198);
+}
+
+.screen_lower {
+    width: 100%;
+    height: 90%;
+    display: flex;
+
+}
+.navbar_kiri {
+    background-color:white;
+    width: 15%;
+    border-right: 1px solid;
+    border-color: rgb(198, 198, 198);
+}
+
+.form_div {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    width: 400px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    height: 200px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+label {
+    color: rgb(67, 67, 67);
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(67, 67, 67);
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid;
+    border-color: rgb(200, 200, 200);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: rgb(198, 198, 198);
+    transition: 0.3s;
+    transform: translateY(-3px);
+}
+
+.content {
+    background-color: #e3e3ff;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e3e3ff 0.5px);
+    background-size: 10px 10px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+form input {
+    margin-top: 20px;
+    margin-right: 0;
+    height: 28px;
+    padding-left: 8px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-color: rgb(198, 198, 198);
+    width: 200px;
+}
+
+form label {
+    color: rgb(67, 67, 67);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+}
+
+#form_rfid {
+    margin-left: 5px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    background-color: #212461;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3037c5;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.popup_dialog {
+    background-color: white;
+    margin: 10% auto;
+    width: 400px;
+    height: 170px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup_header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 27px;
+    background-color: #2d3281;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_text {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+.popup_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.popup_btn{
+    display: none;
+}

@@ -1,0 +1,51 @@
+<!-- This code was made by the Abscan team. For more info, -->
+<!-- visit https://github.com/javendzk/Abscan-Iot-Project -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abscan Admin</title>
+    <link rel="stylesheet" href="src_manage/styleManage.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+</head>
+<body>
+    <div class="screen_all">
+        <div class="navbar_upper">
+            <img src="assets/abscanLogo.svg">
+        </div>
+        <div class="screen_lower"> 
+            <div class="navbar_kiri">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_manage.html">Manage</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+            <div class="popup" id="popup">
+                <div class="popup_dialog">
+                    <div class="popup_header"></div>
+                    <div class="popup_content">
+                        <p class="popup_text"><span id="popup_text"></span></p>
+                        <button class="popup_btn" id="popup_btn">Tutup</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="form_div">
+                    <form id="form_input">
+                        <label for="form_name">Nama</label>
+                        <input type="text" id ="form_name" placeholder="Masukkan nama"><br/>
+                        <label for="form_rfid">RFID</label>
+                        <input type="text" id ="form_rfid" placeholder="Masukkan ID">
+                    </form>
+                    <button onclick="submitData()">Daftarkan</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="src_manage/scriptManage.js"></script>
+</body>
+</html>
+

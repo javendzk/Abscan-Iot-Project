@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.screen_all {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.navbar_upper {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    justify-content: center;
+    border-bottom: 1px solid;
+    border-color: rgb(198, 198, 198);
+}
+
+.screen_lower {
+    width: 100%;
+    height: 90%;
+    display: flex;
+
+}
+
+.navbar_kiri {
+    background-color:white;
+    width: 15%;
+    border-right: 1px solid;
+    border-color: rgb(198, 198, 198);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(67, 67, 67);
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid;
+    border-color: rgb(200, 200, 200);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: rgb(198, 198, 198);
+    transition: 0.3s;
+    transform: translateY(-3px);
+}
+
+/*Mulai dari sini mulai content*/
+
+.content {
+    background-color: #e3e3ff;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e3e3ff 0.5px);
+    background-size: 10px 10px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Awal styling tabel */
+
+.table-scroll table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.table-scroll th {
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    margin: 0;
+    background-color: #212461;
+    color: white;
+}
+
+.table-scroll tr {
+    height: 30px;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 10%;
+    text-align: center;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 25%;
+    text-align: center;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 25%;
+    text-align: center;
+
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 40%;
+    padding-left: 10px;
+}
+
+.table-scroll {
+    height: 500px;
+    width: 1100px;
+    overflow-y: scroll;
+    margin-left: 40px;
+}
+
+.table-scroll tbody tr:nth-child(odd) td {
+    background-color: #f4f4f4;
+}
+
+.table-scroll tbody tr:nth-child(even) td {
+    background-color: white; 
+}
+
+/*Akhir styling table*/
+
+.utilitas {
+    display: inline-flex;
+    padding: 10px;
+    margin: 30px;
+}
+
+.utilitas li {
+    margin-right: 45px;
+}
+
+.li-tanggal, .li-status {
+    background-color: white;
+    height: 50px;
+    width: 250px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid rgb(198, 198, 198);
+}
+
+.li-tanggal {
+    flex-direction: row;
+    position: relative;
+}
+
+.li-tanggal div {
+    text-align: center;
+    border-right: 1px solid rgb(198, 198, 198); 
+    padding-right: 10px;
+}
+
+.li-tanggal span {
+    margin-left: 10px;
+}
+
+li button, .popup_content button {
+    margin: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    background-color: #212461;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3037c5;
+    transform: translateY(-1px);
+}
+
+.csvbtn {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 3px;
+}
+
+ul img {
+    width: 20px;
+}
+
+#status {
+    margin-left: 5px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.popup_dialog {
+    background-color: white;
+    margin: 10% auto;
+    width: 400px;
+    height: 170px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup_header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 27px;
+    background-color: #2d3281;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_close { 
+    float: right;
+    font-size: 25px;
+    color: white;
+    transition-duration: 0.3s;
+    background-color: transparent;
+    border: none;
+    display: block;
+}
+
+.popup_close:hover {
+    font-size: 25px;
+    color: grey;
+    transition-duration: 0.3s;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup_text {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+.popup_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.popup_buttons {
+    display: block;
+}
