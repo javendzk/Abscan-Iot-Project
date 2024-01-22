@@ -1,35 +1,27 @@
 # ABSCAN - Remote RFID Attendance
 [![Generic badge](https://img.shields.io/badge/Build-passing-<COLOR>.svg)](https://shields.io/)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-ABSCAN is a remotely monitored RFID-based attendance system for various purposes. Created with the integration of Arduino R3, ESP-01 Wifi, and an independent webserver to utilize its functionalities. This project is open-source learning project and contributions are welcomed.
+ABSCAN is a remote monitored RFID-based attendance system applicable for various purposes. Created with the integration of NodeMCU V3, Google App Scripts, and an independent webserver to utilize its functionalities. This project is an open-source learning project and contributions are welcomed.
 
-Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abshar. Github profiles are linked at the bottom. **Administrator dasboard: websiteabscanhehe.com**
+Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abshar. Github profiles are linked at the bottom. 
 
 
 ## Features
-- Register new RFID card number and stores it in database
-- Read absence request and sends it with ESP-01 Module
-- Display status after RFID scan on 20x2 LCD Display
-- Enable and disable functionality remotely via website
-- Clear the session's attendace field to start a new session 
-- Export attendace data (NAME, CATEGORY, TIME) into a spreadsheet
+- 
 
 ## Hardware Requirements
 | Quantity | Name |
 | ------ | ------ |
-| 1 | Arduino UNO R3 |
-| 1 | ESP8266-01 Wifi Module |
-| 1 | ESP8266-01 Breadboard adaptor |
+| 1 | NodeMCU V3 ESP8266 |
 | 1 | MFRC522 RFID Reader & Cards |
-| 1 | I2C Soldered 2x20 LCD Display |
-| 1 | Breadboard |
-| 25 | Jumper Wires |
+| 1 | I2C Interfaced 16x2 LCD Display |
+| 1 | Breadboard / PCB Dot Matrix |
+| - | Wires & Solder |
 
 ## Connection Diagram
-(foto connection diagram)
+![alt text](https://github.com/javendzk/Abscan-Iot-Project/blob/main/documentation/Abscan%20V2%20-%20ESP8266%20Connection%20Diagram.png?raw=true)
 
-## Flashing ESP8266-01 Module 
-(foto flashing esp8266)
+## Flashing ESP8266 via Arduino IDE 
 1. Connect your computer to Arduino via USB
 2. Connect ESP8266-01 Module to Arduino like the image above
 3. Create a new sketch on Arduino IDE, upload an empty code
@@ -40,7 +32,7 @@ Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki and Nugroho Ulil Abs
 8. If it shows "Connecting ....----....." on output monitor, hold RST Pushbutton for 2s
 9. Flashing is completed if it outputs "Hard Resetting Via RTS Pin"
 
-## Uploading Code to Arduino UNO R3
+## Deploying Gscripts & Spreadsheets
 1. Imitate the cable connection shown in the provided connection diagram
 2. GND and VCC wiring is completely configurable. Just make sure the connection is exact
 3. Open `abscan_arduino_code.ino` on Arduino IDE
