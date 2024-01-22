@@ -5,7 +5,7 @@ const getStatus = 'UBAH_KE_URL_GOOGLE_SCRIPT';
 const postStatus = 'UBAH_KE_URL_GOOGLE_SCRIPT';
 const doClear = 'UBAH_KE_URL_GOOGLE_SCRIPT';
 const doExport ='UBAH_KE_URL_GOOGLE_SCRIPT';
-const exportUrl ='UBAH_KE_URL_GOOGLE_SCRIPT';
+const exportUrl ='UBAH_KE_URL_DOWNLOAD_SHEET_SESSION';
 let statusAbsen = 0;
 let currentAmount = -1;
 
