@@ -2,7 +2,9 @@
 // visit https://github.com/javendzk/Abscan-Iot-Project 
 
 function doGet() {
-  var sheet = SpreadsheetApp.openById('DEPLOYED_SHEET_SESSION_ID').getActiveSheet();
+  var spreadsheet = SpreadsheetApp.openById('DEPLOYED_SHEET_SESSION_ID');
+  var timeZone = spreadsheet.getSpreadsheetTimeZone();
+  var sheet = spreadsheet.getActiveSheet();
   var data = sheet.getDataRange().getValues();
   var jsonData = [];
   var validDataLength = 0;
@@ -21,11 +23,11 @@ function doGet() {
     }
   } 
 
-  for (i = 6; i < validDataLength + 6; i++) { // Start from row 6 (index 5)
+  for (i = 6; i < validDataLength + 6; i++) { 
     row = {};
     row["No"] = data[i][1];
-    row["Tanggal"] = Utilities.formatDate(data[i][2], "GMT+7", "MM/dd/yyyy");
-    row["Jam"] = Utilities.formatDate(data[i][4], "GMT+7", "HH:mm:ss");
+    row["Tanggal"] = Utilities.formatDate(data[i][2], timeZone, "MM/dd/yyyy");
+    row["Jam"] = Utilities.formatDate(data[i][4], timeZone, "HH:mm:ss");
     row["Nama"] = data[i][6];
     jsonData.push(row);
   }
