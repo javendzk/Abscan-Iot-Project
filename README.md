@@ -45,7 +45,7 @@ Presented by Dhafin Hamizan Setiawan, Javana Muhammad Dzaki, and Nugroho Ulil Ab
 6. Copy the link and insert it based on the corresponding `.gs` file name on `scriptDashboard.js` and `scriptManage.js`
 
 ## Functions and Documentation
-View the PDF via `abscan_documentation.pdf` or click [here](drive.google.com/linkFilePDF)
+View the PDF via `Abscan V2 - Documentation.pdf` or click [here]([drive.google.com/linkFilePDF](https://drive.google.com/file/d/1LSUqsP-haYn_OyRxjwi5bX7K_-f15rn-/view?usp=sharing))
 
 ## Author GitHub Pages
 - https://github.com/javendzk
